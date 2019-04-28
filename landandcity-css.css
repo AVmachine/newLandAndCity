@@ -1,0 +1,29 @@
+body{
+font-family: 'Poppins', sans-serif;
+font-size: 2em;
+background-color: azure !important;
+}
+
+banner{
+    font-size: 4em;
+    color: rgb(129, 141, 170);
+}
+
+.container{
+    border: 8px pink solid !important;
+}
+.row{
+    border: 2px yellowgreen solid;
+}
+
+.col{
+    border: 2px blue solid;
+}
+
+li{
+    border: 2px violet solid;
+}
+
+ul{
+    border: 2px red solid;
+}

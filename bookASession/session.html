@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book your Session</title>
+	<link rel="stylesheet" type="text/css" href="session-styles.css">
+</head>
+<header>
+<div id="bannerImage">
+	<h1 id="bannerText">Build Your Package</h1>
+</div>
+</header>
+<section>
+	<div id="grandTotal">
+		Grand Total: <span id="price"></span>
+	</div>
+</section>
+<div id="bodyy">
+<body>
+<div class="optionsLeft">
+	<h2>Base Package</h2> 
+	Select a base package:
+	<select id="packageOption"> 
+		<option value="0">Value Package ($130)</option>
+		<option value="1">Premium Package ($160)</option>
+	</select>
+</div>
+	<img class="imageRight" src="images/house.jpg">
+<div class="optionsRight">
+	<h2>Twilight Session</h2>
+	Select your twilight add on:
+	<select id="twilightOption">
+		<option value="0">No Twilight Session</option>
+		<option  value="1">Twilight Session (+$100)</option>
+	</select>
+</div>
+<img class="imageLeft" src="images/bridge.jpg">
+<div class="optionsLeft">
+	<h2>Drone Add-on</h2>
+	Select your drone add on:
+	<select id="droneOption">
+		<option  value="0">No Drone</option>
+		<option  value="1">Drone, HD (+$75)</option>
+		<option value="2">Drone, 4k (+$125)</option>
+	</select>
+</div>
+<img class="imageRight" src="images/aerial.jpg">
+<div class="optionsRight">
+	<h2>Virtual Tour</h2>
+	Select your Virtual Tour add on:
+	<select id="virtualOption">
+		<option value="0">No Tour</option>
+		<option value="1"> Virtual Tour (+$150)</option>
+	</select>
+</div>
+<img class="imageLeft" src="images/dining.jpg">
+</body>
+<footer>
+	<a href="http://www.landandcity.me/">return home</a>
+</footer>
+</div>
+<script type="text/javascript" src="../jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="session-script.js"></script>
+</html>
