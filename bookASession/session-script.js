@@ -7,10 +7,10 @@ var virtual = [0, 150];
 
 $('#price').html("$" + sum);
 
-$('#packageOption').on('blur',newSum);
-$('#twilightOption').on('blur', newSum);
-$('#droneOption').on('blur', newSum);
-$('#virtualOption').on('blur', newSum); 
+$('#packageOption').on('change',newSum);
+$('#twilightOption').on('change', newSum);
+$('#droneOption').on('change', newSum);
+$('#virtualOption').on('change', newSum); 
 
 
 
