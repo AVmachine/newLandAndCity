@@ -3,58 +3,117 @@
 <head>
 	<title>Book your Session</title>
 	<link rel="stylesheet" type="text/css" href="../landandcity-css.css">
+	<link rel="stylesheet" type="text/css" href="session-styles.css">
 	<link rel="stylesheet" type="text/css" href="../bootstrap.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
-<div class="row justify-content-center">
-		<header>
-			<div class="row justify-content-center">
-					<ul class = "nav nav-tabs">
-						<li class="nav-item"><a class = "nav-link" href="../index.html" id="currentTab">home</a></li>
-						<li class="nav-item"><a class = "nav-link" href="../about/about.html">about</a></li>
-						<li class="nav-item"><a class = "nav-link" href="..videos/videos.html">the tube</a></li>
-						<li class="nav-item"><a class = "nav-link" href="..photos//photos.html">the gram</a></li>
-						<li class="nav-item"><a class = "nav-link" href="../emailList/emailList.html">email list</a></li>
-						<li class="nav-item"><a class = "nav-link disabled" href="session.html">book a session</a>
-					</ul>
-				</div>
-			<div class="row justify-content-center">
-				<banner>The New Land &amp City</banner>
-			</div>
-		</header>
-	</div>
-<section>
-	<div id="grandTotal">
-		Grand Total: <span id="price"></span>
-	</div>
-</section>
+<div class="container-fluid">
 <body>
-	<h2>Base Package</h2> 
-	Select a base package:
-	<select id="packageOption"> 
-		<option value="0">Value Package ($130)</option>
-		<option value="1">Premium Package ($160)</option>
+<div class="row justify-content-center">
+	<header>
+		<div class="row justify-content-center">
+				<ul class = "nav nav-tabs">
+					<li class="nav-item"><a class = "nav-link" href="../index.html" id="currentTab">home</a></li>
+					<li class="nav-item"><a class = "nav-link" href="../about/about.html">about</a></li>
+					<li class="nav-item"><a class = "nav-link" href="..videos/videos.html">the tube</a></li>
+					<li class="nav-item"><a class = "nav-link" href="..photos//photos.html">the gram</a></li>
+					<li class="nav-item"><a class = "nav-link" href="../emailList/emailList.html">email list</a></li>
+					<li class="nav-item"><a class = "nav-link disabled" href="session.html">book a session</a>
+				</ul>
+			</div>
+		<div class="row justify-content-center">
+			<banner>The New Land &amp City</banner>
+		</div>
+	</header>
+</div>
+<div class="position-fixed">
+	<div class="col">
+		<section>
+			<div id="grandTotal">
+				Grand Total: <span id="price"></span>
+			</div>
+		</section>
+	</div>
+</div>
+
+<div class="row">
+	<div class="offset-2 col-4">
+		<img src="images/Screen Shot 2019-04-30 at 3.30.22 PM-X3.png" class="">
+	</div>
+	<div class="offset-2 col-4">
+		<h2>Base Package</h2> 
+		Select a base package:
+		<select id="packageOption"> 
+			<option value="0">Value Package ($130)</option>
+			<option value="1">Premium Package ($160)</option>
 	</select>
-	<h2>Twilight Session</h2>
-	Select your twilight add on:
-	<select id="twilightOption">
-		<option value="0">No Twilight Session</option>
-		<option  value="1">Twilight Session (+$100)</option>
-	</select>
-	<h2>Drone Add-on</h2>
-	Select your drone add on:
-	<select id="droneOption">
-		<option  value="0">No Drone</option>
-		<option  value="1">Drone, HD (+$75)</option>
-		<option value="2">Drone, 4k (+$125)</option>
-	</select>
-	<h2>Virtual Tour</h2>
-	Select your Virtual Tour add on:
-	<select id="virtualOption">
-		<option value="0">No Tour</option>
-		<option value="1"> Virtual Tour (+$150)</option>
-	</select>
+	</div>
+</div>
+<div class="row">
+	<div class="offset-1 col-4">
+		<h2>Twilight Session</h2>
+			Select your twilight add on:
+			<select id="twilightOption">
+			<option value="0">No Twilight Session</option>
+			<option  value="1">Twilight Session (+$100)</option>
+		</select>
+	</div>
+	<div class="offset-1 col-4">
+		<img src="images/JonasMancuso-54-X3.jpg" class="">
+	</div>
+</div>
+<div class="row">
+	<div class="offset-2 col-4">
+		<img src="images/Screen Shot 2019-04-30 at 3.31.28 PM-X3.png" class="">
+	</div>
+	<div class="col-4 offset-2">
+		<h2>Drone Add-on</h2>
+		Select your drone add on:
+		<select id="droneOption">
+			<option  value="0">No Drone</option>
+			<option  value="1">Drone, HD (+$75)</option>
+			<option value="2">Drone, 4k (+$125)</option>
+		</select>
+	</div>
+</div>
+<div class="row">
+	<div class="offset-1 col-4">
+		<h2>Virtual Tour</h2>
+		Select your Virtual Tour add on:
+		<select id="virtualOption">
+			<option value="0">No Tour</option>
+			<option value="1"> Virtual Tour (+$150)</option>
+		</select>
+	</div>
+	<div class="offset-1 col-4">
+		<img src="images/JonasMancuso-18-X3.jpg" class="">
+	</div>
+</div>
+<div class="row mb-5">
+	<div class="col-2 offset-5">
+		<button type="button" class="btn btn-secondary btn-lh btn-block" data-toggle="modal" data-target="#exampleModal">Submit</button>
+	</div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  Thank you for your order! You will recieve an email confirmation shortly!
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
 </body>
+</div>
 <script type="text/javascript" src="../jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../bootstrap.js"></script>
 <script type="text/javascript" src="session-script.js"></script>
